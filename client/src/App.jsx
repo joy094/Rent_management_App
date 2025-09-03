@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import * as XLSX from "xlsx";
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = import.meta.env.VITE_API_URL;
+
 
 // Define the months to display/pay for
 const MONTHS = ["2025-09", "2025-10", "2025-11", "2025-12"];
